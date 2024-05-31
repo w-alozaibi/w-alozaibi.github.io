@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscapeRoom5</title>
+    <link rel="stylesheet" href="/css/escaperoom5.css">
+</head>
+<body>
+
+   <h1>
+    <span class="animated-text">press space to continue </span>
+  </h1>
+    <div id="story-container">
+        <p id="story-text">"You are a scientist named …...... you are working on a revolutionary time machine project.",
+            "While you are making the last part you accidentally trip and fall into the machine. Sending you back all the way to the prehistoric era, your time machine falls over and you have no other option but to start the car and drive to the nearest city and search for any signs of civilization.",
+          </p>
+    </div>
+<a  href="puzzle.html"> <button id="repair-button">Fix the Engine</button> </a>
+    <script src="EscapeRoom5.js"></script>
+    
+    <html onkeydown="showImage(event)">
+    
+    <img id="hiddenImage" src="/img/veryfriendlyalert.jpg" alt="" hidden>
+    <script>
+        function showImage(event) {
+            if (event.key === 'Escape') {
+                var hiddenImage = document.getElementById('hiddenImage');
+                hiddenImage.removeAttribute('hidden');
+            }
+        }
+    </script>
+    
+</body>
+</html>
+</html>

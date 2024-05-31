@@ -1,0 +1,50 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+main{
+    text-align: center;
+}
+
+h1 {
+    border-color: solid black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    border: 0px;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-image: url("/img/backgroundend.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#game-logo{
+    width: 500px;
+    height: 500px;
+}
+#credits{
+    
+    width: 500px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+    border: 3px solid  darkgray;
+    border-radius: 24px;
+}

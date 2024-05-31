@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.prison {
+    background-image: url('/img/dungeon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hallway {
+    background-image: url('/img/dungeon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.courtyard {
+    background-image: url('/img/courtyard\ 3.0.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+
+}
+
+.leave {
+    background-image: url('/img/castle-at-night.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+.choose-door {
+    font-size: 40px;
+    color: beige;
+   position: absolute;
+   left: 740px;
+   top:400px;
+}
+
+button {
+    background-color: rgba(241, 241, 255, 0);
+    color: dodgerblue;
+    border: none;
+}
+
+
+.key {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    width: 100px;
+    height: 80px;
+
+}
+
+.fire1 {
+    position: absolute;
+    top: 210px;
+    right: 1160px;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.fire2 {
+    position: absolute;
+    top: 210px;
+    right: 22px;
+    width: 200px;
+    height: 200px;
+}
+
+.vase {
+    position: absolute;
+    width: 130px;
+    height: 190px;
+    top: 330px;
+    right: 1630px;
+}
+
+
+
+.hidden {
+    display: none;
+
+}
+
+
+.key-text {
+    color: crimson;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.narrative-1 {
+    color: darkgoldenrod;
+    font-size: 20mm;
+    background-color: black;
+}
+
+.narrative-btn {
+    font-size: 10mm;
+    background-color: black;
+    color: crimson;
+}
+
+.door-to-hallway {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 400px;
+    left: 1250px;
+}
+
+
+
+.door-open {
+    position: absolute;
+    left: 1130px;
+    top: 530px;
+    width: 60px;
+    height: 70px;
+}
+
+.door-locked {
+    position: absolute;
+    left: 1130px;
+    top: 530px;
+    width: 40px;
+    height: 60px;
+
+}
+
+.arrow-correct {
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    left: 1200px;
+    top: 620px;
+}
+
+.arrow-caught {
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    left: 290px;
+    top: 630px;
+
+    
+}
+
+.arrow-locked {
+    position: absolute;
+    top: 530px;
+    left: 1670px;
+    width: 400px;
+    height: 350px;
+}
+
+.game-over {
+    background-color: black;
+    color: red;
+    font-size: 50px;
+   
+}
+
+.pixel-knight1 {
+    position: absolute;
+    top: 200px;
+    left: 1800px;
+    height:800px ;
+    
+}
+
+.pixel-knight2 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    transform: scaleX(-1);
+    height:800px ;
+    
+}
+
+
+.you-died {
+    position: absolute;
+    top: 170px;
+    left: 900px;
+
+}
+
+.text-caught{
+text-align: left;
+position: absolute;
+top:500px;
+left: 800px;
+
+
+}
+
+.to-prison{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    left: 1160px;
+    top: 620px;
+}
+
+
+.leave-text{
+    font-size: 100px;
+    color:chocolate;
+}
+
+.enter-timemachine{
+    font-size:100px;
+    color:crimson;
+    position: absolute;
+    left: 1200px ;
+    top: 700px;
+}
+
+.enter-timemachine:hover{
+    color:aqua;
+}

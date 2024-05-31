@@ -1,0 +1,97 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cable Connection Puzzle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #puzzle-container {
+            width: 300px;
+            margin: auto;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="puzzle-container">
+        <h2>Cable Connection Puzzle</h2>
+        <p>
+            Connect the cables back together to start the engine.
+        </p>
+
+        <p id="instructions">To reconnect the cables, type the corresponding cable identifiers (e.g., A B) and press Enter.</p>
+
+        <label for="input">Enter cable connections:</label>
+        <input type="text" id="input" placeholder="e.g., A B" oninput="validateInput(event)">
+        <button onclick="connectCables()">Connect</button>
+
+        <p id="output"></p>
+    </div>
+
+    <script>
+        // Cable connections state
+        let cableConnections = {
+            A: null,
+            B: null,
+            C: null
+        };
+
+        // Function to validate input format
+        function validateInput(event) {
+            const input = event.target.value.toUpperCase();
+            const validInput = /^[A-C]\s[A-C]$/;
+
+            document.getElementById('instructions').style.color = validInput.test(input) ? 'black' : 'red';
+        }
+
+        // Function to connect cables
+        function connectCables() {
+            const input = document.getElementById('input').value.toUpperCase().split(' ');
+
+            if (input.length === 2 && cableConnections[input[0]] === null && cableConnections[input[1]] === null) {
+                cableConnections[input[0]] = input[1];
+                cableConnections[input[1]] = input[0];
+
+                if (input[0] === 'A' && input[1] === 'B') {
+                    alert('Cables A and B are successfully connected! The engine is now started.');
+                    document.body.innerHTML = 'Congrats!'; // Clear the entire content of the body
+                    return; // End the script
+                } else {
+                    document.getElementById('output').textContent = `Cable ${input[0]} is now connected to ${input[1]} and vice versa.`;
+                }
+            } else {
+                document.getElementById('output').textContent = 'Invalid connection. Please check the cable identifiers and try again.';
+            }
+
+            // Reset input field
+            document.getElementById('input').value = '';
+        }
+    </script>
+
+<html onkeydown="showImage(event)">
+    
+<img id="hiddenImage" src="/img/veryfriendlyalert.jpg" alt="" hidden>
+<script>
+    function showImage(event) {
+        if (event.key === 'Escape') {
+            var hiddenImage = document.getElementById('hiddenImage');
+            hiddenImage.removeAttribute('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>
+<!---end of the puzzle-->

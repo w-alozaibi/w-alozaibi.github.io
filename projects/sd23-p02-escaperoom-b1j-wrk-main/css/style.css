@@ -1,0 +1,30 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.play-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container {
+    position: relative;
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; }
+
+body {
+    background-image: url("/img/pixel-night.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
