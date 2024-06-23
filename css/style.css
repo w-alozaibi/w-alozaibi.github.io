@@ -28,13 +28,16 @@
 }
 
 body {
+  
     padding-top: 30px; /* Adjust this padding to be at least the height of the navbar */
+    
 }
 
 
 *{
+
 color: greenyellow;
-background-color: blueviolet ;
+background-color: blueviolet;
 -webkit-text-stroke: 0.2px;
 -webkit-text-stroke-color: black;
 
@@ -67,3 +70,6 @@ color: black;
 font-size: 75px;
     
       }
+ 
+
+      
